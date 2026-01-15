@@ -134,7 +134,7 @@ header {
 
 .bandeira:hover,
 .toggles button:hover {
-    transform: scale(1.1) rotate(-90deg);
+    transform: scale(1.1);
     color: var(--text-main);
 }
 
@@ -143,6 +143,7 @@ header {
     margin: 2rem auto 5rem;
     max-width: 1200px;
     color: var(--accent-primary);
+    padding: 0 2rem;
 }
 
 .layout {

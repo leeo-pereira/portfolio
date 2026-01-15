@@ -6,8 +6,8 @@ const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "light") {
   bodyElement.classList.add("lightmode");
-  icone.classList.remove("fa-moon");
-  icone.classList.add("fa-sun");
+  icone.classList.remove("fa-solid");
+  icone.classList.add("fa-regular");
 }
 
 toggleButton.onclick = function () {
@@ -21,10 +21,10 @@ toggleButton.onclick = function () {
 
   document.getElementById("icone");
   if (icone.classList.contains("fa-sun")) {
-    icone.classList.remove("fa-sun");
-    icone.classList.add("fa-moon");
+    icone.classList.remove("fa-solid");
+    icone.classList.add("fa-regular");
   } else {
-    icone.classList.remove("fa-moon");
-    icone.classList.add("fa-sun");
+    icone.classList.remove("fa-solid");
+    icone.classList.add("fa-regular");
   }
 };
