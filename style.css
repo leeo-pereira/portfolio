@@ -135,6 +135,11 @@ a:focus-visible {
     font-size: 0.95rem;
 }
 
+.destaque {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -224,6 +229,7 @@ a:focus-visible {
 
 .footer-links i {
     color: var(--accent-primary);
+    transition: color 0.3s ease;
 }
 
 .footer-links i:hover {
