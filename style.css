@@ -45,6 +45,17 @@ body {
     color: var(--text-main);
 }
 
+.lightmode {
+    --bg-main: #f8f9fb;
+    --bg-alt: #ffffff;
+    --text-main: #1c1d22;
+    --text-muted: #555;
+    --border-subtle: rgba(0, 0, 0, 0.1);
+
+    --accent-primary: #0ea5e9;
+    --accent-secondary: #6366f1;
+}
+
 img,
 picture,
 video,
@@ -93,6 +104,40 @@ ul {
 
 /* --- FIM DOS RESETS --- */
 
+header {
+    position: relative;
+    padding-top: 2.5rem;
+}
+
+.toggles {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.toggles button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: transform 0.3s ease;
+}
+
+.bandeira {
+    height: 20px;
+    transition: transform 0.3s ease;
+    background: none;
+}
+
+.bandeira:hover,
+.toggles button:hover {
+    transform: scale(1.1) rotate(-90deg);
+    color: var(--text-main);
+}
+
 .site-header {
     text-align: center;
     margin: 2rem auto 5rem;
@@ -106,7 +151,6 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    justify-items: stretch;
     padding: 2rem;
 }
 
@@ -125,8 +169,8 @@ a:focus-visible {
 }
 
 .sobre {
-    align-self: center;
     margin-right: 3rem;
+    align-self: center;
 }
 
 .sobre p {
